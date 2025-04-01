@@ -1,0 +1,15 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=git
+command=C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;C:/Users/oaona/OneDrive/桌面/NLight41_LearningRepo/NLight41_CodeProject/NLight41_HLOA_VS2022/out/build/x64-Debug/_deps/cppad-subbuild/cppad-populate-prefix/tmp/cppad-populate-gitclone.cmake
+source_dir=C:/Users/oaona/OneDrive/桌面/NLight41_LearningRepo/NLight41_CodeProject/NLight41_HLOA_VS2022/out/build/x64-Debug/_deps/cppad-src
+work_dir=C:/Users/oaona/OneDrive/桌面/NLight41_LearningRepo/NLight41_CodeProject/NLight41_HLOA_VS2022/out/build/x64-Debug/_deps
+repository=https://github.com/coin-or/CppAD.git
+remote=origin
+init_submodules=TRUE
+recurse_submodules=--recursive
+submodules=
+CMP0097=NEW
+      
