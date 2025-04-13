@@ -1,4 +1,4 @@
-# NLight41_HLOA 專案子倉庫 
+# [NLight41_HLOA 專案子倉庫](https://github.com/NLight41/NLIGHT41_HLOA)
 > 建立時間：03.31.2025 by NLight41  
 > [返回 NLight41 本站](https://nlight41.github.io/NLight41_LearningRepo/)  
 
