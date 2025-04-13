@@ -80,18 +80,18 @@ HLOA 旨在針對複雜問題求得更具穩定性與收斂性的解，適用於
 ---
   
 ## 🧾 命名理念與開發背景（Naming Philosophy and Background）  
-> 中文導言：  
+### 中文導言：  
 > HLOA 的命名來自我對「資訊結構動態回饋」與「全像原理」的長期觀察與興趣。  
 > 這是一套由我在 2024 年中開始構思，2025 年初進入實作的原創性演算法架構。  
 > 希望能透過這個命名傳達我對最佳化不只是數學模型，更是動態系統與內部回饋機制的理解。  
   
-> 英文部分:  
+### 英文部分:   
 > The name **HLOA (Holo Loop Optimization Algorithm)** comes from the core idea of simulating an optimization process inspired by **holographic feedback loops**.   
 > Rather than following a conventional path of gradient descent alone, HLOA introduces a dynamic structure that mimics how systems can self-correct, adapt, and resonate internally through feedback.  
-
+> 
 > The term *"Holo Loop"* emphasizes the cyclical, reflective nature of learning—where every update carries memory, momentum, and self-awareness, similar to holographic interference patterns in physics.  
-
+> 
 > This naming concept was originally conceived by me (NLight41) in mid-2024, and I began implementation and experimentation in early 2025.   
 > As a high school student passionate about optimization theory and computational logic, I wanted to design an algorithm that pushes beyond traditional methods by blending mathematical reasoning with structural design thinking.  
-
+> 
 > HLOA is not only a technical framework but also a reflection of how I perceive adaptive intelligence: recursive, nonlinear, and ever-evolving.  
