@@ -1,0 +1,17 @@
+變數名稱,功能分類,功能用途說明
+p,參數向量,儲存所有最佳化的參數，為演算法調整對象
+param1,最佳化參數,HLOA 儲存與更新的主要變數之一
+param2,最佳化參數,與 param1 一同構成模擬模型的解空間
+prevError,歷史誤差記憶,記錄上一次模擬的誤差，供 errorDiff 使用
+currError,當前誤差,記錄本次模擬的誤差，是演算法收斂的依據
+errorDiff,誤差變化差值,currError - prevError，用來模擬系統殘影
+simulationFunction,模擬函式,計算參數的模擬誤差值，是外部誤差模型
+grad,梯度向量,參數空間的梯度，供參數修正使用
+computeGradient,梯度計算函式,計算 grad 的外部方法
+momentum,動量向量,記錄參數方向的歷史累積變化
+momentumFactor,動量權重係數,控制動量慣性的強弱，類似經驗學習比重
+holoFactor,全像修正權重,控制歷史誤差於當前調整中的參與比例
+holoAdjustment,全像修正項,holoFactor × errorDiff，模擬歷史殘影修正
+learningRate,學習率,控制參數更新的全域步伐快慢
+maxIterations,最大迭代次數,演算法最大運行限制
+iteration,當前迭代次數,控制主迴圈收斂與否的依據

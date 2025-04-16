@@ -1,0 +1,19 @@
+變數名稱,功能分類,功能用途說明
+p,參數向量,儲存所有最佳化的參數，為演算法調整對象
+param1,最佳化參數,參數容器中的一項，用於模擬誤差函數
+param2,最佳化參數,與 param1 搭配組成二維解空間
+prevError,歷史誤差記憶,記錄上一次的模擬結果，用於誤差比較
+currError,當前誤差,本輪模擬的誤差值，為收斂與修正依據
+errorDiff,誤差差值,表示當前與前一次誤差的差異，進入 holo 調控
+simulationFunction,模擬函式指標,使用 std::function 可切換模擬目標（凸/非凸）
+grad,梯度向量,有限差分方式計算出的梯度向量
+computeGradient,梯度函式,對函數進行有限差分求導
+momentum,動量向量,保留參數變化方向之歷史資訊
+momentumFactor,動量權重,決定歷史方向在當前更新中比重
+holoFactor,全像回饋權重,控制 errorDiff 參與修正的比重
+holoAdjustment,回饋調整值,holoFactor × errorDiff
+learningRate,學習率,控制參數更新的步伐速度
+maxIterations,最大迭代數,演算法的容忍運算次數上限
+iteration,當前迭代次數,記錄主迴圈目前進行次數
+useConvexFunction,測試函式選擇,true 為 convex，false 為非凸函式
+threshold,誤差容忍門檻,手動輸入的收斂準則

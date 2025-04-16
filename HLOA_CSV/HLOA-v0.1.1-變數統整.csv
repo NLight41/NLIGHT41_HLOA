@@ -1,0 +1,16 @@
+變數名稱,功能分類,功能用途說明
+p,參數向量,使用 Eigen::VectorXd 表示的最佳化參數向量
+simulationFunction,目標函數,CppAD::AD<double> 實作，可對目標函數自動微分
+value,目標值,最佳化目標值，用於計算 loss function
+prevError,歷史誤差記憶,記錄前一輪誤差值，用於計算 errorDiff
+currError,當前誤差,目前模擬與目標的差值平方
+errorDiff,誤差差值,作為全像映射與 adaptive control 的關鍵輸入
+computeGradient,梯度函式,CppAD 實作，自動微分向量化求梯度
+grad,梯度向量,Eigen 向量形式的偏導數集合
+momentum,動量向量,記錄歷史方向變化以穩定收斂方向
+momentumFactor,動量權重,調控新舊方向比重
+holoFactor,回饋權重,調節 errorDiff 對 holoAdjustment 的放大程度
+holoAdjustment,全像修正值,errorDiff × holoFactor，形成 adaptive 條件調節
+learningRate,學習率,收斂速度控制
+maxIterations,最大迭代次數,主迴圈限制
+iteration,目前迭代次數,控制迴圈與收斂判定

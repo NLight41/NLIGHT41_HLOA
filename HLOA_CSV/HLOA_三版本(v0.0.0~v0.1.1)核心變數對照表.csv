@@ -1,0 +1,49 @@
+變數名稱,功能分類,功能用途說明,v0.0.0,v0.0.1,v0.1.1
+computeGradient,梯度函式,CppAD 實作，自動微分向量化求梯度,,,✅
+computeGradient,梯度函式,對函數進行有限差分求導,,✅,
+computeGradient,梯度計算函式,計算 grad 的外部方法,✅,,
+currError,當前誤差,本輪模擬的誤差值，為收斂與修正依據,,✅,
+currError,當前誤差,目前模擬與目標的差值平方,,,✅
+currError,當前誤差,記錄本次模擬的誤差，是演算法收斂的依據,✅,,
+errorDiff,誤差差值,作為全像映射與 adaptive control 的關鍵輸入,,,✅
+errorDiff,誤差差值,表示當前與前一次誤差的差異，進入 holo 調控,,✅,
+errorDiff,誤差變化差值,currError - prevError，用來模擬系統殘影,✅,,
+grad,梯度向量,Eigen 向量形式的偏導數集合,,,✅
+grad,梯度向量,參數空間的梯度，供參數修正使用,✅,,
+grad,梯度向量,有限差分方式計算出的梯度向量,,✅,
+holoAdjustment,全像修正值,errorDiff × holoFactor，形成 adaptive 條件調節,,,✅
+holoAdjustment,全像修正項,holoFactor × errorDiff，模擬歷史殘影修正,✅,,
+holoAdjustment,回饋調整值,holoFactor × errorDiff,,✅,
+holoFactor,全像修正權重,控制歷史誤差於當前調整中的參與比例,✅,,
+holoFactor,全像回饋權重,控制 errorDiff 參與修正的比重,,✅,
+holoFactor,回饋權重,調節 errorDiff 對 holoAdjustment 的放大程度,,,✅
+iteration,當前迭代次數,控制主迴圈收斂與否的依據,✅,,
+iteration,當前迭代次數,記錄主迴圈目前進行次數,,✅,
+iteration,目前迭代次數,控制迴圈與收斂判定,,,✅
+learningRate,學習率,控制參數更新的全域步伐快慢,✅,,
+learningRate,學習率,控制參數更新的步伐速度,,✅,
+learningRate,學習率,收斂速度控制,,,✅
+maxIterations,最大迭代數,演算法的容忍運算次數上限,,✅,
+maxIterations,最大迭代次數,主迴圈限制,,,✅
+maxIterations,最大迭代次數,演算法最大運行限制,✅,,
+momentum,動量向量,保留參數變化方向之歷史資訊,,✅,
+momentum,動量向量,記錄參數方向的歷史累積變化,✅,,
+momentum,動量向量,記錄歷史方向變化以穩定收斂方向,,,✅
+momentumFactor,動量權重,決定歷史方向在當前更新中比重,,✅,
+momentumFactor,動量權重,調控新舊方向比重,,,✅
+momentumFactor,動量權重係數,控制動量慣性的強弱，類似經驗學習比重,✅,,
+p,參數向量,使用 Eigen::VectorXd 表示的最佳化參數向量,,,✅
+p,參數向量,儲存所有最佳化的參數，為演算法調整對象,✅,✅,
+param1,最佳化參數,HLOA 儲存與更新的主要變數之一,✅,,
+param1,最佳化參數,參數容器中的一項，用於模擬誤差函數,,✅,
+param2,最佳化參數,與 param1 一同構成模擬模型的解空間,✅,,
+param2,最佳化參數,與 param1 搭配組成二維解空間,,✅,
+prevError,歷史誤差記憶,記錄上一次模擬的誤差，供 errorDiff 使用,✅,,
+prevError,歷史誤差記憶,記錄上一次的模擬結果，用於誤差比較,,✅,
+prevError,歷史誤差記憶,記錄前一輪誤差值，用於計算 errorDiff,,,✅
+simulationFunction,模擬函式,計算參數的模擬誤差值，是外部誤差模型,✅,,
+simulationFunction,模擬函式指標,使用 std::function 可切換模擬目標（凸/非凸）,,✅,
+simulationFunction,目標函數,CppAD::AD<double> 實作，可對目標函數自動微分,,,✅
+threshold,誤差容忍門檻,手動輸入的收斂準則,,✅,
+useConvexFunction,測試函式選擇,true 為 convex，false 為非凸函式,,✅,
+value,目標值,最佳化目標值，用於計算 loss function,,,✅
