@@ -5,7 +5,7 @@
 ---
 # HLOA - Holo Loop Optimization Algorithm   
 > 創建者：NLight41  
-> 構思起始：2024 年中  
+> 構思起始：mid-2024  
 > 實作啟動：03.09.2025   
   
 ---  
